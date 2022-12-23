@@ -1,0 +1,6 @@
+sh script that configures a server
+sudo apt update
+sudo apt install nginx -y
+sudo ufw allow 'Nginx HTTP'
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx restart
